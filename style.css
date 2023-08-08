@@ -1,0 +1,73 @@
+body {
+  text-align: center;
+}
+
+#main {
+  width: 400px;
+  height: 500px;
+  background-image: url("images/background.jpg");
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+
+#area {
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  overflow: hidden;
+  z-index: 100;
+}
+
+#plane.freeze {
+  width: 58px;
+  height: 100px;
+  background: url("images/plane1.png");
+  background-size: 100% 100%;
+  position: absolute;
+  margin-top: 400px;
+  animation: none;
+}
+#plane {
+  width: 58px;
+  height: 100px;
+  background: url("images/plane1.png");
+  background-size: 100% 100%;
+  position: absolute;
+  margin-top: 400px;
+  animation: rocket 0.1s infinite;
+}
+@keyframes rocket {
+  from {
+    background: url("images/plane1.png");
+    background-size: 100% 100%;
+  }
+  to {
+    background: url("images/plane2.png");
+    background-size: 100% 100%;
+  }
+}
+
+#meteorKe1.freeze {
+  width: 58px;
+  height: 80px;
+  background: url("images/meteor1.png");
+  background-size: 100% 100%;
+  animation: none;
+}
+#meteorKe1 {
+  width: 58px;
+  height: 80px;
+  background: url("images/meteor1.png");
+  background-size: 100% 100%;
+  animation: meteorFire1 0.1s infinite;
+}
+@keyframes meteorFire1 {
+  from {
+    background: url("images/meteor1.png");
+    background-size: 100% 100%;
+  }
+  to {
+    background: url("images/meteor2.png");
+    background-size: 100% 100%;
+  }
+}
